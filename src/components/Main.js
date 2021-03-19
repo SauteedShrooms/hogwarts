@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Card from "./Card"
+import FrontCard from "./FrontCard"
 
 
 
 class Main extends Component {
 
-  getHogsData = () => this.props.data.map(hog => <Card hog={hog} />)
+  getHogsData = () => this.props.data.map(hog => <FrontCard hog={hog} />)
 
   render() {
     
