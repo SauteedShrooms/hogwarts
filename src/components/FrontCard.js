@@ -1,7 +1,6 @@
 import React, { Component } from "react";
  
 
-
 class FrontCard extends Component {
 
   hogName = this.props.hog.name
@@ -11,12 +10,11 @@ class FrontCard extends Component {
   
   render() {
     return (
-      <div className="card pigTile ui four wide column">
+      <div className="card pigTile ui five wide column">
+        {this.hogName}
         <div className="image">
           <img src={`${this.pigImage}`}/>
         </div>
-        {this.hogName}
-        {this.hogSpecialty}
       </div>
     );
   }
